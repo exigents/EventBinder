@@ -1,7 +1,6 @@
 --> Packages
 local Packages = script:WaitForChild('Packages');
 local Class = require(Packages:WaitForChild('Class'));
-local Signal = require(Packages:WaitForChild('signal'));
 
 --> Define Class
 local Binds = Class('Binds');
