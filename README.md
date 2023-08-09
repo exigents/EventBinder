@@ -18,10 +18,14 @@ local Event = EventBinder.new(game.Players.PlayerAdded, playerAdded);
 Output:
 ```Player1 has joined the server!```
 
+Creates a bind to a event.
+
 # Unbinding
 ```lua
 Event:Unbind();
 ```
+Unbinds the event, completely removing it from the event binder.
+You will not be able to run any other methods after this is called on a bind.
 
 # Change Bind
 ```lua
@@ -36,6 +40,8 @@ Event:ChangeBind(playerAdded_2);
 Output:
 ```Player1 has just landed!```
 
+Changes the bind to the current event that is binded.
+
 # Change Event
 ```lua
 Event:ChangeEvent(game.Players.PlayerRemoving);
@@ -43,3 +49,5 @@ Event:ChangeEvent(game.Players.PlayerRemoving);
 
 Output:
 ```Player1 has just landed!```
+
+Changes the event that the callback is connected to.
